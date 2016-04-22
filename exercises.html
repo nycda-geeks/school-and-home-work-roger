@@ -1,0 +1,62 @@
+<p>Exercises</p>
+
+<script>
+
+	var actual1 = 5;
+	var actual2 = 6;
+
+	function vierkant(number) {
+		return number * number;
+
+	}
+
+	console.log(vierkant(actual1));
+
+	function vergelijking(x, y) {
+		if (x < y) {
+			return x;
+		}
+		else if (y < x) {
+			return y;
+		}
+	}
+
+	console.log(vergelijking(actual1, actual2));
+
+	function findzero(a, b) {
+		if ( Math.abs(a - 0)> Math.abs(b - 0) ) {
+			return b;
+		}
+		else {
+			return a;
+		}
+	}
+
+	console.log(findzero(actual1, actual2));
+
+	var sequence2 = [1, 5, 10];
+	function findhighest(sequence) {
+		var highest = 0;
+		for(var i = 0; i < sequence.length; i++) {
+			if(highest < sequence[i]) {
+				highest = sequence[i];
+			}
+		}
+		console.log(highest);
+	}
+
+	findhighest(sequence2);
+
+	var shipDimensions = ["height", "length", "width"];
+	var specificBoat = [50, 50, 20];
+	function shipwright(key, value) {
+		var ShipReview = {};
+		for (var i = 0; i < key.length; i++) {
+			ShipReview[ key[i] ] = value[i];
+		}
+		console.log(ShipReview)
+	}
+
+	shipwright(shipDimensions, specificBoat);
+
+</script>

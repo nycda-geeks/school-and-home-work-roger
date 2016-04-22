@@ -1,0 +1,90 @@
+<p>Data</p>
+
+<script>
+
+	function math(number) {
+		return number * number;
+
+	}
+
+	var example = 2
+	var output = example(math);
+
+
+	console.log(output);
+
+	var artemis = {
+		numberOfLegs: 2,
+		symbol: "bow",
+		occuption: "hunting"
+	}
+
+	artemis.symbol = "bowAndQuiver"
+
+	var someRectangle = {
+		width: 10,
+		height: 20
+	};
+
+	function findArea(rectangle) {
+		return rectangle.width * rectangle.height;
+	}
+
+	var area = findArea(someRectangle);
+	console.log(area);
+
+
+
+	var egg = {
+		calories: 80
+	};
+	var apple = {
+		calories: 20
+	};
+	var orangeJuice = {
+		calories: 40
+	};
+
+	var breakfast = [egg, apple, orangeJuice];
+
+	function howMuchBreakfast(breakfast) {
+		var numCalories = 0;
+		for(var i = 0; i < breakfast.length; i++) {
+			numCalories = numCalories + breakfast[i].calories;
+		}
+
+		return numCalories;
+	}
+
+
+
+
+	for(var objectKey in object) {
+		console.log("the property key is: " + objectKey);
+		console.log("the value of that property is: " + object[objectKey]);
+	}
+
+
+
+
+
+	function vergelijking(x, y) {
+		if (x < y) {
+			return x;
+		}
+		else if (y < x) {
+			return y;
+		}
+	}
+
+	function mountain(dimensionsName, dimensionsValue) {
+		var dimensionsName = [1000, 200, 500]
+		var dimensionsValue = ["diameter", "height", "length"]
+		var path = {
+			dimensionsName: dimensionsValue
+		}
+		return path;
+	}
+	console.log( path.length );
+
+</script>

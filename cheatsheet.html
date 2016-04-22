@@ -1,0 +1,54 @@
+<p>Cheatsheet</p>
+<script>
+​
+// Below are variable types
+var this_is_a_string = "Yay I am a string";
+var this_is_a_number = 5;
+var this_is_an_array = ["one", 2, "three", "four", 5]; // this_is_an_array[0] is 'one'
+var this_is_a_boolean = false;
+var this_is_an_object = {
+	this_is_a_property: 'this is a value',
+	properties_are_also_called_keys: 'this_is_a_second_value'
+} // this_is_an_object.this_is_a_property is 'this_is_a_value'
+​
+// Below is a while loop
+// This loop will print 'I looped 5 times'
+var count = 0;
+while ( count < 5 ) {
+	console.log  ( 'I looped' );
+	count++; // This increases count by one, if count is 1, count++ makes it 2
+}
+​
+// Below is a while loop
+// This loop will print 'I looped 5 times'
+for  ( var i = 0; i < 5; i++ ) {
+	console.log  ( 'I looped' );
+}
+​
+// Below is an if else statement
+var this_is_a_word = 'Bird';
+if  ( this_is_a_word == 'Bird' ) {
+	console.log ( 'the bird is the word' ); 
+} else if  ( this_is_a_word == 'Duck' ) {
+	console.log ( 'the word is duck' ); 
+} else {
+	console.log ( 'The bird and duck are not the word' ); 
+}
+​
+// Below are functions
+// Defining a function does NOT do anything yet, you must CALL the function
+function this_prints_a_number  (  ) {
+	console.log ( 5 ); 
+}
+​
+// The string_name is called a parameter, it is a temporary variable inside the function
+function this_prints_a_string  ( string_name ) {
+	console.log ( string_name );
+}
+​
+// This is how you call a function
+this_prints_a_number (  ); // This will console log the number 5, look above!
+​
+this_prints_a_string ( 'hello' ); // This will console.log 'hello' 
+​
+</script>

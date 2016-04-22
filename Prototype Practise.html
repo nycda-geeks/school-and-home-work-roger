@@ -1,0 +1,23 @@
+<p>Prototype Practise</p>
+<script>
+
+	function Emaillist(name){
+
+		this.name = name;
+		this.list = [];
+	}
+
+	Emaillist.prototype.addEmail = function(emailaddress){
+		var list = list + emailaddress;
+	};
+
+	Emaillist.prototype.SendEmailToAll = function(emailcontent){
+		console.log("Email content:" + emailcontent + "Sending email to:" + list);
+	};
+
+	var newlist = new Emaillist("BSSA Students");
+
+	//newlist.addEmail("fictional@address.uk");
+	//newlist.SendEmailToAll("nonsensical message");
+
+</script>

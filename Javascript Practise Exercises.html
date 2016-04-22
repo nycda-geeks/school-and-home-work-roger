@@ -1,0 +1,56 @@
+<p>Javascript Practice Exercises</p>
+<script>
+
+	function areaCircle (radius) {
+		return Math.PI * (radius * 2)
+	};
+
+	console.log(areaCircle(5));
+
+	function lastLetter(word) {
+		for(var i = 0; i < word.length; i++) {
+			var letter = word[i];
+		}
+		return letter;
+	};
+
+	console.log(lastLetter("comrade"));
+
+
+	function stars(length) {
+		var star = "";
+		for(var i = 0; i < length; i++) {
+			var star = star + "*";
+		}
+		return star;
+	};
+
+	console.log(stars(10));
+
+
+	function starField(length) {
+		var star = "";
+		for(var j = 0; j < length; j++) {
+			for(var i = 0; i < length; i++) {
+				var star = star + "*";
+			}
+			var star = star + "\n"
+		}
+		return star;
+	};
+
+	console.log(starField(4));
+
+	function average(array) {
+		var sum = 0;
+		for(var i = 0; i < array.length; i++ ) {
+			var sum = sum + array[i];
+		}
+		var avg = sum/array.length;
+		return avg;
+	};
+
+	console.log(average([1, 2, 4]));
+
+	console.log("challenge to be tackled later");
+</script>
