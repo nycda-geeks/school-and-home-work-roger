@@ -7,21 +7,13 @@
 	var findProduct = function (Product1, Product2) {
 		return Product1 * Product2;
 	}
-	function threeOperation (x, operation) {
+	var threeOperation = function (x, operation) {
 		return operation(x, 3);
 	}
 
-	(function() {
 		alert(threeOperation(4, findSum));
-	})();
-	(function() {
 		alert(threeOperation(5, findSum));
-	})();
-	(function() {
 		alert(threeOperation(4, findProduct));
-	})();
-	(function() {
 		alert(threeOperation(5, findProduct));
-	})();
 
 </script>

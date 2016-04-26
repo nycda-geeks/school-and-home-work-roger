@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>JQuery Exercise</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script src="jquery-1.12.3.min.js"></script>
+</head>
+
+<body>
+
+	<div id="element1">
+		<h1>Show Start</h1>
+	</div>
+	<div id="element2">
+		<h2>Act 1</h2>
+	</div>
+	<div id="element3">
+		<h2>Act 2</h2>
+	</div>
+	<div id="element4">
+		<h2>Act 3</h2>
+	</div>
+	<div id="element5">
+		<h2>Show End</h2>
+	</div>
+	<div id="element6">
+	</div>
+	<div id="element7">
+	</div>
+	<div id="element8">
+	</div>
+	<div id="element9">
+	</div>
+	<div id="element10">
+	</div>
+	<script>
+		$ ( document ).ready ( function ( ) {
+			$ ("#element1").fadeOut ( 2000 )
+			$ ("#element2").fadeIn ( 2000 )
+			$ ("#element3").SlideUp ( "slow" )
+		});
+	</script>
+</body>
+</html>
