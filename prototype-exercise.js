@@ -1,0 +1,20 @@
+
+function Rectangle(x, y, width, height) {
+this.x = x;
+this.y = y;
+this.width = width;
+this.height = height;
+}
+
+
+Rectangle.prototype.computearea = function() {
+return this.width * this.length;
+};
+
+Rectangle.prototype.containspoint = function (point) {
+
+
+}
+var nicerectangle = new Rectangle ( 1, 1, 10, 20 )
+
+console.log(nicerectangle);

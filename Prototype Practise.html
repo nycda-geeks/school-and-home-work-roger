@@ -1,23 +1,23 @@
 <p>Prototype Practise</p>
 <script>
 
-	function Emaillist(name){
+	function werkzoekende(username, email){
 
-		this.name = name;
-		this.list = [];
+		this.username = username;
+		this.email = email;
 	}
 
-	Emaillist.prototype.addEmail = function(emailaddress){
-		return this.list = [] + emailaddress;
-	};
+	//werkzoekende.prototype.sendEmail = function(emailcontent){
+	//	return this.list = [] + emailaddress;
+	//};
 
-	Emaillist.prototype.SendEmailToAll = function(emailcontent){
-		console.log("Email content: \n" + emailcontent + "\n \n Sending email to:\n" + this.list);
-	};
+	//Emaillist.prototype.SendEmailToAll = function(emailcontent){
+	//	console.log("Email content: \n" + emailcontent + "\n \n Sending email to:\n" + this.list);
+	//};
 
-	var newlist = new Emaillist("BSSA Students");
+	//var RogerDering = new werkzoekende("Roger, rogerdering@hotmail.com");
 
-	newlist.addEmail("Bob@address.uk");
-	newlist.SendEmailToAll("Hey, Bob. Let's do something sometime.");
+	//Roger.sendEmail("we hebben een nieuwe vacature voor je.");
+	//newlist.SendEmailToAll("Hey, Bob. Let's do something sometime.");
 
 </script>
